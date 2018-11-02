@@ -1,0 +1,118 @@
+// top navigation
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.288);
+}
+
+.header-navigation-logo {
+  color: #a51f1f;
+  font-weight: 600;
+  font-size: 38px;
+  margin: 0;
+  span {
+    font-size: 25px;
+    font-weight: 100;
+  }
+}
+
+.header-navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  li {
+    list-style: none;
+    padding-right: 10px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 25px;
+      font-weight: 100;
+      padding: 20px;
+      &:hover {
+        color: #a51f1f;
+      }
+    }
+  }
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/slider_01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-slogan {
+  padding: 20px;
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: #fff;
+  p {
+    margin: 0;
+    font-size: 2.4vw;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+  }
+  :nth-child(1) {
+    letter-spacing: 8px;
+  }
+  :nth-child(2) {
+    font-size: 3.9vw;
+    letter-spacing: 5px;
+    font-weight: 900;
+  }
+  :nth-child(3) {
+    text-align: center;
+  }
+  a {
+    border: 1px solid #fff;
+    padding: 20px 40px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.479);
+      color: initial;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}

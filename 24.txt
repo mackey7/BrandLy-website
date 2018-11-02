@@ -1,0 +1,5 @@
+
+
+http://tympanus.net/Development/HoverEffectIdeas/
+5. Sekcja trening items to karuzela
+6. przydatne pojêcia: hover effects css, content slider
