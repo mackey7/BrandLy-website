@@ -143,3 +143,10 @@ html {
   .latest-section_info-image img {
     height: 100%;
     width: 100%; }
+
+.trending-section-container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
