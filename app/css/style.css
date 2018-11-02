@@ -10,7 +10,9 @@ html {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-top: 20px;
-  background-color: rgba(255, 255, 255, 0.288); }
+  background-color: rgba(255, 255, 255, 0.288);
+  position: fixed;
+  width: 100%; }
 
 .header-navigation-logo {
   color: #a51f1f;
@@ -83,7 +85,8 @@ html {
   .header-slogan :nth-child(3) {
     text-align: center; }
   .header-slogan a {
-    border: 1px solid #fff;
+    border: 3px solid #fff;
+    margin-top: 20px;
     padding: 20px 40px;
     color: #fff;
     text-decoration: none;
@@ -94,6 +97,49 @@ html {
       background-color: rgba(255, 255, 255, 0.479);
       color: initial; }
 
-@media screen and (max-width: 992px) {
-  body {
-    background-color: blue; } }
+.latest-section {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 500px; }
+
+.category-name {
+  text-align: center;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 40px; }
+  .category-name::before, .category-name::after {
+    margin: 30px auto;
+    display: block;
+    width: 105px;
+    content: ""; }
+  .category-name::before {
+    border-bottom: 3px #dc0000 solid; }
+  .category-name::after {
+    border-top: 3px #dc0000 solid; }
+
+.latest-section_category,
+.latest-section_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.latest-section_category-figure {
+  width: 29%;
+  margin: 0;
+  padding: 20px; }
+  .latest-section_category-figure img {
+    height: 100%;
+    width: 100%; }
+
+.latest-section_info-image {
+  padding: 20px;
+  margin: 0;
+  width: 45%; }
+  .latest-section_info-image img {
+    height: 100%;
+    width: 100%; }
