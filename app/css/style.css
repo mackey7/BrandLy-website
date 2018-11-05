@@ -252,3 +252,11 @@ html {
       .subscribe-conatiner form button:hover {
         background-color: #00000069;
         color: #fff; }
+
+.footer p {
+  text-align: center;
+  padding: 50px;
+  color: #5d5d5d;
+  font-family: "Courier New", Courier, monospace; }
+  .footer p i {
+    color: #dc0000; }
