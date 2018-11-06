@@ -216,9 +216,24 @@ html {
     display: flex;
 }
 
-//from blog section
-.blog-section {}
+@media screen and (max-width: 992px) {
+    .latest-section_category,
+    .latest-section_info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .latest-section_category-figure,
+    .latest-section_info-image {
+        width: 80%;
+    }
+}
 
+//from blog section
 .blog-section_article-item-container {
     width: 80%;
     height: 100%;
@@ -288,9 +303,7 @@ html {
             color: #fff;
         }
     }
-}
-
-// subscribe section
+} // subscribe section
 .subscribe-section {
     height: 250px;
     width: 100%;
@@ -342,9 +355,7 @@ html {
             }
         }
     }
-}
-
-// footer
+} // footer
 .footer {
     p {
         text-align: center;
