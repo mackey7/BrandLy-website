@@ -207,7 +207,7 @@ html {
     .trending-section-container .trending-section-container-description p {
       padding-top: 20px;
       color: #5d5d5d;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-size: 24px; }
     .trending-section-container .trending-section-container-description hr {
       float: left;
@@ -315,6 +315,17 @@ html {
     .blog-section_article-item .blog-section_article-item__btn:hover {
       background: #000000;
       color: #fff; }
+
+@media screen and (max-width: 992px) {
+  .blog-section_article-item-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%; } }
 
 .subscribe-section {
   height: 250px;
