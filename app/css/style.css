@@ -12,7 +12,8 @@ html {
   padding-top: 20px;
   position: fixed;
   width: 100%;
-  height: 70px; }
+  height: 70px;
+  z-index: 999; }
 
 .header-navigation-logo {
   color: #a51f1f;
@@ -96,7 +97,9 @@ html {
     font-weight: 400; }
     .header-slogan a:hover {
       background-color: rgba(255, 255, 255, 0.479);
-      color: initial; }
+      color: initial;
+      -webkit-transition: 2s;
+      transition: 2s; }
 
 .fa-times-circle {
   color: #a51f1f; }
@@ -116,7 +119,9 @@ html {
     padding: 40px; }
     .header-navigation-menu li {
       text-align: center;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      -webkit-transition: 1s;
+      transition: 1s; }
       .header-navigation-menu li a:hover {
         color: #e6e6e6;
         text-decoration: underline; }
@@ -160,7 +165,16 @@ html {
   padding: 20px; }
   .latest-section_category-figure img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    border: 2px solid #c7c7c7;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .latest-section_category-figure img:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      border: 2px solid #d48686; }
 
 .latest-section_info-image {
   padding: 20px;
@@ -168,7 +182,16 @@ html {
   width: 45%; }
   .latest-section_info-image img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    border: 2px solid #c7c7c7;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .latest-section_info-image img:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      border: 2px solid #d48686; }
 
 @media screen and (max-width: 992px) {
   .latest-section_category,
@@ -197,7 +220,9 @@ html {
   .trending-section-container figure {
     width: 50%; }
     .trending-section-container figure img {
-      width: 100%; }
+      width: 100%;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
   .trending-section-container .trending-section-container-description {
     width: 100%; }
     .trending-section-container .trending-section-container-description h3 {
@@ -207,7 +232,7 @@ html {
     .trending-section-container .trending-section-container-description p {
       padding-top: 20px;
       color: #5d5d5d;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-size: 24px; }
     .trending-section-container .trending-section-container-description hr {
       float: left;
@@ -229,14 +254,17 @@ html {
         font-weight: 700;
         cursor: pointer;
         margin-right: 20px; }
+        .trending-section-container .trending-section-container-description fieldset label:hover {
+          border: 2px solid #665656; }
       .trending-section-container .trending-section-container-description fieldset input[type="radio"] + label {
         height: 70px;
         border-radius: 0px; }
       .trending-section-container .trending-section-container-description fieldset input:checked + label {
         background-color: #000000;
         color: #ffffff;
-        -webkit-transition: background-color 0.3s;
-        transition: background-color 0.3s; }
+        -webkit-transition: background-color 1;
+        -webkit-transition: background-color 1s;
+        transition: background-color 1s; }
     .trending-section-container .trending-section-container-description a {
       padding: 10px 30px;
       border: 1px solid #000000;
@@ -245,7 +273,9 @@ html {
       margin-top: 30px;
       margin-right: 20px;
       font-size: 20px;
-      color: #000000; }
+      color: #000000;
+      -webkit-transition: 1s;
+      transition: 1s; }
       .trending-section-container .trending-section-container-description a:hover {
         background-color: #000000;
         color: #fff; }
@@ -255,7 +285,12 @@ html {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column;
+    justify-self: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; } }
 
 .blog-section_article-item-container {
   width: 80%;
@@ -273,13 +308,26 @@ html {
 .blog-section_article-item {
   width: 48%;
   height: 100%;
-  padding: 15px; }
+  padding: 15px;
+  -webkit-transition: 1s;
+  transition: 1s; }
+  .blog-section_article-item:hover {
+    border: 2px solid #c7c7c7;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background: #f7f7f7;
+    padding-bottom: 30px; }
   .blog-section_article-item figure {
     margin: 0; }
     .blog-section_article-item figure img {
       height: 100%;
       width: 100%;
-      margin: 0; }
+      margin: 0;
+      border: 2px solid #c7c7c7;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-transition: 1s;
+      transition: 1s; }
     .blog-section_article-item figure figcaption {
       padding: 30px 0px; }
       .blog-section_article-item figure figcaption a {
@@ -311,7 +359,9 @@ html {
     padding: 20px 40px;
     color: #5d5d5d;
     text-transform: uppercase;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: 2s;
+    transition: 2s; }
     .blog-section_article-item .blog-section_article-item__btn:hover {
       background: #000000;
       color: #fff; }
@@ -325,7 +375,9 @@ html {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%; } }
+    width: 100%; }
+  .blog-section_article-item {
+    width: 80%; } }
 
 .subscribe-section {
   height: 250px;
@@ -364,16 +416,22 @@ html {
       .subscribe-conatiner form input:-ms-input-placeholder {
         text-transform: uppercase;
         color: #fff; }
+      .subscribe-conatiner form input::-ms-input-placeholder {
+        text-transform: uppercase;
+        color: #fff; }
       .subscribe-conatiner form input::placeholder {
         text-transform: uppercase;
         color: #fff; }
     .subscribe-conatiner form button {
+      cursor: pointer;
       padding: 20px 90px;
       text-transform: uppercase;
       color: #000000;
       background-color: #e6e6e6;
       border: 1px solid #e6e6e6;
-      font-weight: 500; }
+      font-weight: 500;
+      -webkit-transition: 2s;
+      transition: 2s; }
       .subscribe-conatiner form button:hover {
         background-color: #00000069;
         color: #fff; }
