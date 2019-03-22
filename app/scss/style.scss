@@ -342,7 +342,12 @@ html {
 }
 
 @media screen and (max-width: 992px) {
+    .trending-section {
+        margin: 0;
+        padding: 0;
+    }
     .trending-section-container {
+        width: 90%;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -352,6 +357,59 @@ html {
         -ms-flex-align: center;
         align-items: center;
         text-align: center;
+        figure {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .trending-section-container-description {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            fieldset {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin-top: 50px;
+                padding: 0;
+                legend {
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+                input {
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+                label {
+                    width: 100%;
+                    height: 100%;
+                }
+                input[type="radio"]+label {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .trendingItems__actions {
+                width: 100%;
+                height: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                a {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 } //from blog section
 .blog-section_article-item-container {
@@ -450,14 +508,16 @@ html {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         width: 100%;
     }
     .blog-section_article-item {
         width: 80%;
+        margin-bottom: 30px;
     }
-}
-
-// subscribe section
+} // subscribe section
 .subscribe-section {
     height: 250px;
     width: 100%;
@@ -488,7 +548,7 @@ html {
             background: inherit;
             border: 1px solid #fff;
             padding: 20px;
-            width: 70%;
+            width: 100%;
             color: #fff;
             margin-right: 40px;
             &::-webkit-input-placeholder {
@@ -521,6 +581,24 @@ html {
             &:hover {
                 background-color: #00000069;
                 color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .subscribe-conatiner {
+        width: 90%;
+        margin: 0 auto;
+        h3 {}
+        form {
+            input {
+                width: 70%;
+            }
+            button {
+                text-align: center;
+                width: 30%;
+                padding: 20px
             }
         }
     }
